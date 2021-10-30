@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><h1>Click the button key in inputs rectangle </p>
+
+<button onclick="myFunction()">calculate</button>
+
+<p id="a"></p>
+<p id="p"></p>
+<p id="v"></p>
+
+<script>
+function myFunction() {
+  
+var length = prompt("Enter a whole number for the length of your rectangle.");
+var width = prompt ("Enter a whole number for the width of your rectangle.");
+var depth= prompt ("Enter a whole number for the depth of your rectangle prism");
+
+   
+var perimeter = (2 * length ) + (2 * width );
+var area= length * width ;
+var volume= length * width * depth;
+
+ document.getElementById("a").innerHTML =
+        "Area of rectangle:"  + area;
+ document.getElementById("p").innerHTML =
+        "perimeter of rectangle:"  + perimeter ;
+ document.getElementById("v").innerHTML =
+        "volume of rectangle prism:"  + volume;
+}
+</script></h1>
+<style>
+body { background: linear-gradient(#FF1493,#9400D3,#FF1493,#FFFF00)}
+</style>
